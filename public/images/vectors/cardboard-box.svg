@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="kraftLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <linearGradient id="kraftDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b45309" />
+      <stop offset="100%" stop-color="#92400e" />
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="200" height="200" rx="28" fill="#fffbeb" />
+  <circle cx="100" cy="100" r="70" fill="#fef3c7" />
+
+  <!-- Ground Shadow -->
+  <ellipse cx="100" cy="168" rx="55" ry="12" fill="#fde68a" opacity="0.6" />
+
+  <!-- Isometric Box -->
+  <!-- Top Flaps (Diamond) -->
+  <polygon points="100,42 154,68 100,94 46,68" fill="#fbbf24" stroke="#d97706" stroke-width="2" />
+  <!-- Left Face -->
+  <polygon points="46,68 100,94 100,154 46,128" fill="#d97706" stroke="#b45309" stroke-width="2" />
+  <!-- Right Face -->
+  <polygon points="100,94 154,68 154,128 100,154" fill="#b45309" stroke="#92400e" stroke-width="2" />
+
+  <!-- Tape Across Top -->
+  <polygon points="90,47 110,57 110,103 90,93" fill="#78350f" opacity="0.75" />
+  <polygon points="90,93 110,103 110,154 90,144" fill="#78350f" opacity="0.75" />
+
+  <!-- Recycle Logo on Left Face -->
+  <circle cx="73" cy="116" r="14" fill="#fbbf24" opacity="0.8" />
+  <text x="73" y="121" font-family="system-ui, sans-serif" font-size="13" font-weight="900" fill="#78350f" text-anchor="middle">♷</text>
+
+  <!-- Fragile / Handle With Care Stamp -->
+  <rect x="114" y="106" width="26" height="16" rx="2" fill="#fef3c7" opacity="0.8" />
+  <text x="127" y="118" font-family="monospace" font-size="9" font-weight="bold" fill="#78350f" text-anchor="middle">ECO</text>
+</svg>

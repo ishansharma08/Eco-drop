@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="glassGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#047857" />
+      <stop offset="30%" stop-color="#10b981" />
+      <stop offset="65%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#065f46" />
+    </linearGradient>
+    <linearGradient id="corkGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d97706" />
+      <stop offset="100%" stop-color="#b45309" />
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="200" height="200" rx="28" fill="#ecfdf5" />
+  <circle cx="100" cy="100" r="70" fill="#d1fae5" />
+
+  <!-- Shadow -->
+  <ellipse cx="100" cy="172" rx="38" ry="8" fill="#a7f3d0" opacity="0.6" />
+
+  <!-- Cork / Stopper -->
+  <polygon points="94,22 106,22 104,36 96,36" fill="url(#corkGrad)" />
+
+  <!-- Bottle Lip -->
+  <ellipse cx="100" cy="36" rx="14" ry="4" fill="#047857" />
+  <ellipse cx="100" cy="35" rx="12" ry="3" fill="#34d399" />
+
+  <!-- Bottle Body -->
+  <path d="M92,36 L92,70 L72,98 L72,154 Q72,166 100,166 Q128,166 128,154 L128,98 L108,70 L108,36 Z" fill="url(#glassGrad)" />
+
+  <!-- Translucent Glass Glow -->
+  <path d="M78,104 L122,104 L122,154 Q122,162 100,162 Q78,162 78,154 Z" fill="#6ee7b7" opacity="0.25" />
+
+  <!-- Curved Specular Reflection -->
+  <path d="M76,100 L76,150" stroke="#ffffff" stroke-width="4" stroke-linecap="round" opacity="0.75" />
+  <path d="M84,105 L84,145" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" opacity="0.5" />
+
+  <!-- Vintage Label -->
+  <rect x="82" y="112" width="36" height="28" rx="4" fill="#ffffff" opacity="0.9" stroke="#047857" stroke-width="1" />
+  <text x="100" y="126" font-family="system-ui, sans-serif" font-size="11" font-weight="900" fill="#047857" text-anchor="middle">♸</text>
+  <text x="100" y="135" font-family="monospace" font-size="7" font-weight="bold" fill="#065f46" text-anchor="middle">100% GL</text>
+</svg>

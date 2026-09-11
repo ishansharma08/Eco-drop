@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="book1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#be123c" />
+      <stop offset="100%" stop-color="#e11d48" />
+    </linearGradient>
+    <linearGradient id="book2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+    <linearGradient id="book3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#059669" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="200" height="200" rx="28" fill="#fff1f2" />
+  <circle cx="100" cy="100" r="70" fill="#ffe4e6" />
+
+  <!-- Shadow -->
+  <ellipse cx="100" cy="168" rx="58" ry="10" fill="#fecdd3" opacity="0.6" />
+
+  <!-- Bottom Book (Green) -->
+  <rect x="42" y="132" width="116" height="24" rx="4" fill="url(#book3)" stroke="#047857" stroke-width="1.5" />
+  <rect x="52" y="136" width="100" height="16" fill="#fef2f2" />
+  <line x1="56" y1="140" x2="148" y2="140" stroke="#cbd5e1" stroke-width="1.5" />
+  <line x1="56" y1="144" x2="148" y2="144" stroke="#cbd5e1" stroke-width="1.5" />
+  <line x1="56" y1="148" x2="148" y2="148" stroke="#cbd5e1" stroke-width="1.5" />
+  <rect x="42" y="132" width="12" height="24" rx="3" fill="#047857" />
+
+  <!-- Middle Book (Blue) -->
+  <rect x="48" y="98" width="104" height="22" rx="4" fill="url(#book2)" stroke="#0369a1" stroke-width="1.5" />
+  <rect x="58" y="102" width="88" height="14" fill="#f8fafc" />
+  <line x1="62" y1="106" x2="142" y2="106" stroke="#cbd5e1" stroke-width="1.5" />
+  <line x1="62" y1="110" x2="142" y2="110" stroke="#cbd5e1" stroke-width="1.5" />
+  <rect x="48" y="98" width="12" height="22" rx="3" fill="#0284c7" />
+
+  <!-- Top Book (Red/Rose) -->
+  <rect x="56" y="66" width="88" height="20" rx="4" fill="url(#book1)" stroke="#9f1239" stroke-width="1.5" />
+  <rect x="66" y="70" width="72" height="12" fill="#fff1f2" />
+  <line x1="70" y1="74" x2="134" y2="74" stroke="#cbd5e1" stroke-width="1.5" />
+  <line x1="70" y1="78" x2="134" y2="78" stroke="#cbd5e1" stroke-width="1.5" />
+  <rect x="56" y="66" width="12" height="20" rx="3" fill="#881337" />
+  
+  <!-- Bookmark ribbon hanging down -->
+  <polygon points="120,66 128,66 128,96 124,92 120,96" fill="#f59e0b" />
+
+  <!-- Recycle Stamp -->
+  <circle cx="102" cy="76" r="6" fill="#ffffff" opacity="0.9" />
+  <text x="102" y="79" font-family="system-ui, sans-serif" font-size="7" font-weight="900" fill="#be123c" text-anchor="middle">♺</text>
+</svg>

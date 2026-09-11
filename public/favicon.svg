@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="ecoDrop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="50%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+    <linearGradient id="leafVein" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#a7f3d0" />
+    </linearGradient>
+  </defs>
+  <!-- Rounded Base Badge -->
+  <rect width="64" height="64" rx="16" fill="#064e3b" />
+  
+  <!-- Water Drop + Leaf Silhouette -->
+  <path d="M32,8 C32,8 14,26 14,40 C14,50 22,58 32,58 C42,58 50,50 50,40 C50,26 32,8 32,8 Z" fill="url(#ecoDrop)" />
+  
+  <!-- Inner Leaf Accent Curve -->
+  <path d="M32,18 Q34,36 44,40 C41,47 34,49 28,45 Q30,34 32,18 Z" fill="#ffffff" opacity="0.35" />
+  
+  <!-- Leaf Center Stem -->
+  <path d="M32,20 Q32,38 24,46" stroke="url(#leafVein)" stroke-width="2.5" stroke-linecap="round" fill="none" />
+  <path d="M31,30 Q36,32 38,36" stroke="url(#leafVein)" stroke-width="2" stroke-linecap="round" fill="none" />
+  <path d="M29,38 Q34,40 36,44" stroke="url(#leafVein)" stroke-width="2" stroke-linecap="round" fill="none" />
+</svg>

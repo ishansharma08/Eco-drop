@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* EcoDrop Design System - Modern waste management app */
+
+@layer base {
+  :root {
+    /* Core brand colors - eco-friendly green theme */
+    --background: 120 20% 98%;
+    --foreground: 160 15% 15%;
+
+    --card: 120 25% 97%;
+    --card-foreground: 160 15% 15%;
+
+    --popover: 120 25% 97%;
+    --popover-foreground: 160 15% 15%;
+
+    /* Primary - vibrant eco green */
+    --primary: 142 76% 36%;
+    --primary-foreground: 120 25% 97%;
+    --primary-glow: 142 65% 45%;
+
+    /* Secondary - natural earth tones */
+    --secondary: 142 20% 88%;
+    --secondary-foreground: 160 15% 25%;
+
+    --muted: 142 15% 92%;
+    --muted-foreground: 160 10% 45%;
+
+    /* Accent - fresh mint */
+    --accent: 158 64% 52%;
+    --accent-foreground: 120 25% 97%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 120 25% 97%;
+
+    --border: 142 20% 88%;
+    --input: 142 20% 88%;
+    --ring: 142 76% 36%;
+
+    /* Success/reward colors */
+    --success: 142 76% 36%;
+    --success-foreground: 120 25% 97%;
+    
+    /* Warning - amber for alerts */
+    --warning: 43 96% 56%;
+    --warning-foreground: 25 15% 15%;
+
+    /* Eco gradient system */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 50%, hsl(142 65% 45%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(var(--card)), hsl(142 30% 95%));
+    --gradient-success: linear-gradient(90deg, hsl(var(--success)), hsl(158 64% 52%));
+
+    /* Shadows with eco theme */
+    --shadow-eco: 0 10px 30px -10px hsl(var(--primary) / 0.3);
+    --shadow-card: 0 4px 20px -4px hsl(var(--primary) / 0.15);
+    --shadow-glow: 0 0 40px hsl(var(--primary-glow) / 0.4);
+
+    /* Animation system */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    /* Dark mode eco theme */
+    --background: 160 25% 8%;
+    --foreground: 120 25% 95%;
+
+    --card: 160 20% 10%;
+    --card-foreground: 120 25% 95%;
+
+    --popover: 160 20% 10%;
+    --popover-foreground: 120 25% 95%;
+
+    --primary: 142 65% 45%;
+    --primary-foreground: 160 25% 8%;
+    --primary-glow: 142 70% 50%;
+
+    --secondary: 160 15% 18%;
+    --secondary-foreground: 120 25% 85%;
+
+    --muted: 160 15% 15%;
+    --muted-foreground: 120 10% 65%;
+
+    --accent: 158 50% 45%;
+    --accent-foreground: 160 25% 8%;
+
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 120 25% 95%;
+
+    --border: 160 15% 18%;
+    --input: 160 15% 18%;
+    --ring: 142 65% 45%;
+
+    --success: 142 65% 45%;
+    --success-foreground: 160 25% 8%;
+    
+    --warning: 43 85% 50%;
+    --warning-foreground: 160 25% 8%;
+
+    /* Dark mode gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 50%, hsl(142 70% 50%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(var(--card)), hsl(160 25% 12%));
+    --gradient-success: linear-gradient(90deg, hsl(var(--success)), hsl(158 50% 45%));
+
+    /* Dark mode shadows */
+    --shadow-eco: 0 10px 30px -10px hsl(var(--primary) / 0.5);
+    --shadow-card: 0 4px 20px -4px hsl(var(--primary) / 0.3);
+    --shadow-glow: 0 0 40px hsl(var(--primary-glow) / 0.6);
+
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
+
+@layer components {
+  /* Eco-themed component classes */
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+  
+  .gradient-card {
+    background: var(--gradient-card);
+  }
+  
+  .gradient-primary {
+    background: var(--gradient-primary);
+  }
+  
+  .shadow-eco {
+    box-shadow: var(--shadow-eco);
+  }
+  
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+  
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+  
+  .transition-spring {
+    transition: var(--transition-spring);
+  }
+
+  @keyframes scan-laser {
+    0% {
+      top: 0%;
+      opacity: 0.8;
+    }
+    50% {
+      top: 96%;
+      opacity: 1;
+    }
+    100% {
+      top: 0%;
+      opacity: 0.8;
+    }
+  }
+
+  .animate-scan-laser {
+    animation: scan-laser 2.2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  }
+
+  .barcode-stripes {
+    background: repeating-linear-gradient(
+      90deg,
+      #000 0px,
+      #000 2px,
+      transparent 2px,
+      transparent 5px,
+      #000 5px,
+      #000 9px,
+      transparent 9px,
+      transparent 11px,
+      #000 11px,
+      #000 15px,
+      transparent 15px,
+      transparent 18px
+    );
+  }
+
+  @keyframes indeterminate {
+    0% {
+      transform: translateX(-100%) scaleX(0.2);
+    }
+    50% {
+      transform: translateX(0%) scaleX(0.7);
+    }
+    100% {
+      transform: translateX(100%) scaleX(0.2);
+    }
+  }
+
+  .animate-indeterminate {
+    animation: indeterminate 1.4s infinite ease-in-out;
+  }
+}

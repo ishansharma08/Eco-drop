@@ -2,6 +2,8 @@
 
 Transform waste into rewards with EcoDrop's innovative recycling platform. Schedule drop-offs, earn points, and make a positive environmental impact.
 
+Deployed Website: https://ecodrop-ten.vercel.app/
+
 ## Getting Started
 
 ### Prerequisites
